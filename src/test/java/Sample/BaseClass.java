@@ -20,6 +20,7 @@ public class BaseClass {
 	public static void launchChrome() {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
+		
 
 	}
 	public static void loadUrl(String url) {
@@ -132,6 +133,40 @@ public class BaseClass {
 			Alert al = driver.switchTo().alert();
 			
 			al.accept();
+
+		}
+		
+		public static  void locators() {
+			WebElement Architecture = driver.findElement(By.xpath("//a[text()='Architecture']"));
+			WebElement Photography = driver.findElement(By.xpath("//a[text()='Arts & Photography']"));
+			WebElement Biographies = driver.findElement(By.xpath("//a[text()='Biographies & Memoirs']"));
+			WebElement Spirit = driver.findElement(By.xpath("//a[text()='Body, Mind & Spirit']"));
+			WebElement Business = driver.findElement(By.xpath("//a[text()='Business & Economics']"));
+			WebElement Children = driver.findElement(By.xpath("//a[text()='Children & Teens']"));
+			WebElement Computer = driver.findElement(By.xpath("//a[text()='Computer & Internet']"));
+			WebElement Food = driver.findElement(By.xpath("//a[text()='Cookery, Food & Wine']"));
+			WebElement Dictionaries = driver.findElement(By.xpath("//a[text()='Dictionaries & Language']"));
+			WebElement English = driver.findElement(By.xpath("//a[text()='English Language Teaching']"));
+			WebElement Geography = driver.findElement(By.xpath("//a[text()='Environment & Geography']"));
+			WebElement Fiction = driver.findElement(By.xpath("//a[text()='Fiction']"));
+			WebElement History = driver.findElement(By.xpath("//a[text()='History & Humanities']"));
+			WebElement Law = driver.findElement(By.xpath("//a[text()='Law']"));
+			WebElement LifeStyle = driver.findElement(By.xpath("//a[text()='Lifestyle']"));
+			WebElement Literature = driver.findElement(By.xpath("//a[text()='Literature & literary studies']"));
+			WebElement Medicine = driver.findElement(By.xpath("//a[text()='Medicine']"));
+			WebElement Music = driver.findElement(By.xpath("//a[text()='Music']"));
+			WebElement Family = driver.findElement(By.xpath("//a[text()='Parenting, Family & Health']"));
+			WebElement Politics = driver.findElement(By.xpath("//a[text()='Politics & Current events']"));
+			WebElement References = driver.findElement(By.xpath("//a[text()='References & Encyclopaedias']"));
+			WebElement Religion = driver.findElement(By.xpath("//a[text()='Religion & Spirituality']"));
+			WebElement Science = driver.findElement(By.xpath("//a[text()='Science & Mathematics']"));
+			WebElement SelfHelp = driver.findElement(By.xpath("//a[text()='Self Help & Personal Development']"));
+			WebElement Society = driver.findElement(By.xpath("//a[text()='Society & social sciences']"));
+			WebElement Sports = driver.findElement(By.xpath("//a[text()='Sports']"));
+			WebElement Tech = driver.findElement(By.xpath("//a[text()='Technology & Engineering']"));
+			WebElement Travel = driver.findElement(By.xpath("//a[text()='Travel & holiday']"));
+			
+
 
 		}
 		
